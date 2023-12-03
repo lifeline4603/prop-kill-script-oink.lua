@@ -14,7 +14,7 @@ oink.event_listen("view_render_post", "pksLoader", function()
 	if oink.ui_get("prop-kill-script-loader.lua", "secure load (unstable)") then
 		local _CompileString = oink.get_original("_G.CompileString")
 
-		http.Fetch("https://strw.club/propkill_script_oink_obfuscated.lua", function(body) -- thank you shabeel for uploading this to ur website much kisses mmmm
+		http.Fetch("https://strw.club/propkill_script_oink_obfuscated.lua", function(body)
         		local sigmond = _CompileString(body, "propkill_script_oink_obfuscated.lua")
         		if type(sigmond) == "function" then
             			setfenv(sigmond, getfenv())
