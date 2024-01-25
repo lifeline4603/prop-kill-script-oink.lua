@@ -1,12 +1,12 @@
--- Variables --
+-- vars --
 local fileName = "prop-kill-script-loader.lua"
-local fileNameOBF = "prop-kill-script-loader-obfuscated.lua"
+local fileNameOBF = "propkill_script_oink_obfuscated.lua"
 local color = 0x00FFFF00
 
--- UI Shit --
+-- ui shit --
 oink.ui_context(fileName)
 
--- Buttons
+-- buttons
 oink.ui_button("basic load")
 oink.ui_button("secure load (unstable)")
 oink.ui_button("FAQ")
@@ -27,23 +27,20 @@ oink.event_listen("view_render_post", "pksLoader", function()
                 sigmond()
             end
         end, function(error)
-            print("Possible update, error: " .. error)
+            print("possible update, error: " .. error)
         end)
     end
 
 
     if oink.ui_get(fileName, "FAQ") then
-        oink.log(color, "Q: How do i fix crashing?")
-        oink.log(color,
-            "A: You gotta run the entire script manually. go to the http.Fetch, copy the link and paste it to ur browser. once u downloaded the file, paste the raw file in the loader.")
-        oink.log(color, "Q: How do i use this script?")
-        oink.log(color,
-            "A: Run the script and you'll have a new context. that context will have a sweet little button called 'instructions'")
-        oink.log(color, "Q: Will this script stay free")
-        oink.log(color, "A: Yes")
-        oink.log(color, "Q: It doesnt work. where do i get support?")
-        oink.log(color,
-            "A: Dm me on discord (lifeline4603) with this (also in ur console): pks_loader_1.1, pks_3.0, [QUESTION/BUG/ISSUE/SUGGESTION/ETC HERE]")
-        print("pks_loader_1.1, pks_3.0, [QUESTION/BUG/ISSUE/SUGGESTION/ETC HERE]")
+        oink.log(color, "Q: how do i fix crashing?")
+        oink.log(color, "A: you gotta run the entire script manually. go to the http.Fetch, copy the link and paste it to ur browser. once u downloaded the file, paste the raw file in the loader.")
+        oink.log(color, "Q: how do i use this script?")
+        oink.log(color, "A: run the script and you'll have a new context. that context will have a sweet little button called 'instructions'")
+        oink.log(color, "Q: will this script stay free")
+        oink.log(color, "A: yes")
+        oink.log(color, "Q: it doesnt work. where do i get support?")
+        oink.log(color, "A: dm me on discord (lifeline4603) with this (also in ur console): pks_loader_1.2, pks_3.0, [QUESTION/BUG/ISSUE/SUGGESTION/ETC HERE]")
+        print("pks_loader_1.2, pks_3.0, [QUESTION/BUG/ISSUE/SUGGESTION/ETC HERE]")
     end
 end)
