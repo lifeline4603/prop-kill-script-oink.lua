@@ -8,7 +8,7 @@ oink.ui_context(fileName)
 
 -- buttons
 oink.ui_button("basic load")
-oink.ui_button("secure load (unstable)")
+oink.ui_button("secure load (can lead to instabilities)")
 oink.ui_button("FAQ")
 
 oink.event_remove("view_render_post", "pksLoader")
@@ -21,6 +21,7 @@ oink.event_listen("view_render_post", "pksLoader", function()
         local _CompileString = oink.get_original("_G.CompileString")
 
         http.Fetch("https://strw.club/pkscript/" .. fileNameOBF, function(body)
+            oink.log(color, "this can take a bit...")
             local sigmond = _CompileString(body, fileNameOBF)
             if type(sigmond) == "function" then
                 setfenv(sigmond, getfenv())
