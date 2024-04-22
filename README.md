@@ -16,3 +16,5 @@ change log for 4.0
 - - incase servers start doing shitty command blocks (anticheat), you can now do this.
 - improved security to avoid anticheat detection
 - ported all soundfiles to  https://strw.club/pkscript/data
+
+![](https://i.imgur.com/ZFC21L7.png)
