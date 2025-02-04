@@ -1,6 +1,9 @@
 # prop-kill-script-loader.lua
 the loader for a stable and fully operational ttt propkill script
 
+> [!WARNING]
+> this github repository is no longer being updated so any updates or push requests will get ignored.
+
 notes:
 - this only works if you have access to the **oink api (oink.industries).** the functionality of this script relies completely on it
 - theres a faq in the loader
